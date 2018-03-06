@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SOCKET CHAT</title>
+
+	<!--Javascript-->
+	<script src="http://185.13.90.140:8081/socket.io/socket.io.js"></script>
+	<script src="resources/socket.js"></script>
+
+	<!--Style-->
+	<link rel="stylesheet" type="text/css" href="resources/socket.css"/>
+
+</head>
+<body onload="new Chat(null, true /*, true*/)">
+	<div id="chat">
+		<div id="content"></div>
+		<div id="footer">
+			<input placeholder="Guest" type="text" name="user">
+			<input placeholder="Type here to chat" type="text" name="message">
+			<button>Send</button>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+html {height: 100%;}
+body {background: silver; overflow: hidden; margin: 0; padding: 0;height: 100%;}
+
+/* BASE */
+
+#chat {
+	background: green;
+	height: 100%;
+	width: 100%;
+}
+
+#chat {
+	background: whitesmoke;
+	height: 100%;
+	max-width: 1024px;
+	min-width: 350px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+/* CONTENT */
+
+#content {
+	flex: 1;
+	padding: 10px;
+	overflow-y : auto;
+}
+
+.line {
+	color: black
+}
+
+.line.left {
+	text-align: left;
+	color: gray;
+}
+
+.line.right {
+	text-align: right;
+}
+
+.line.center {
+	text-align: center;
+}
+
+.error {
+	color: #990000;
+	font-weight: bold;
+	opacity: 0.5;
+}
+
+.success {
+	color: darkgreen;
+	font-weight: bold;
+	opacity: 0.5;
+}
+
+
+/* FOOTER */
+
+#footer {
+	display: flex;
+	height: 30px;
+	padding: 10px;
+	bottom: 0;
+	border-top: 1px solid antiquewhite;
+}
+
+#footer > * {
+	margin: 0 2px;
+}
+
+#footer > input[name=user] {
+	width: 200px
+}
+
+#footer > input[name=message] {
+	flex: 1;
+}
+
+#footer > button {
+	width: 100px;
+}
